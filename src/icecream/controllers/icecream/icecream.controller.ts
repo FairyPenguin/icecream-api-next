@@ -1,4 +1,15 @@
-import { Body, Controller, Get, Param, Post, Query, Res } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  ParseIntPipe,
+  Post,
+  Query,
+  Res,
+  UsePipes,
+  ValidationPipe,
+} from '@nestjs/common';
 import { Response } from 'express';
 import { CreateFlavorDto } from 'src/icecream/dtos/CreateFlavor.dto';
 import * as IceCreamFlavoes from '../../../data/flavors.json';
@@ -21,9 +32,9 @@ export class IcecreamController {
 
   //route param
   @Get(':id')
-  getFlavorById(@Param('id') id: string) {
+  getFlavorById(@Param('id', ParseIntPipe) id: number) {
     const filtredById = IceCreamFlavoes.flavors.filter((flavor) => {
-      return flavor.id === parseInt(id);
+      return flavor.id === id;
     });
 
     console.log(typeof id);
@@ -52,6 +63,7 @@ export class IcecreamController {
   }
 
   @Post('create-new-flavor')
+  @UsePipes(new ValidationPipe())
   createNewFlavor(
     @Body() flavorPaylaod: CreateFlavorDto,
     @Res() response: Response,
