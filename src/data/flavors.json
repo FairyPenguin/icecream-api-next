@@ -1,0 +1,154 @@
+{
+  "flavors": [
+    {
+      "id": 1,
+      "flavorName": "Vanilla",
+      "image": "vanilla.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 2,
+      "flavorName": "Chocolate",
+      "image": "chocolate.jpg",
+      "origin": "Mexico"
+    },
+    {
+      "id": 3,
+      "flavorName": "Strawberry",
+      "image": "strawberry.jpg",
+      "origin": "France"
+    },
+    {
+      "id": 4,
+      "flavorName": "Mint Chocolate Chip",
+      "image": "mint-chocolate-chip.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 5,
+      "flavorName": "Cookies and Cream",
+      "image": "cookies-and-cream.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 6,
+      "flavorName": "Butter Pecan",
+      "image": "butter-pecan.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 7,
+      "flavorName": "Coffee",
+      "image": "coffee.jpg",
+      "origin": "Ethiopia"
+    },
+    {
+      "id": 8,
+      "flavorName": "Rocky Road",
+      "image": "rocky-road.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 9,
+      "flavorName": "Pistachio",
+      "image": "pistachio.jpg",
+      "origin": "Iran"
+    },
+    {
+      "id": 10,
+      "flavorName": "Caramel",
+      "image": "caramel.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 11,
+      "flavorName": "Cookie Dough",
+      "image": "cookie-dough.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 12,
+      "flavorName": "Raspberry",
+      "image": "raspberry.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 13,
+      "flavorName": "Matcha Green Tea",
+      "image": "matcha-green-tea.jpg",
+      "origin": "Japan"
+    },
+    {
+      "id": 14,
+      "flavorName": "Mango",
+      "image": "mango.jpg",
+      "origin": "India"
+    },
+    {
+      "id": 15,
+      "flavorName": "Peanut Butter",
+      "image": "peanut-butter.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 16,
+      "flavorName": "Coconut",
+      "image": "coconut.jpg",
+      "origin": "Tropical Regions"
+    },
+    {
+      "id": 17,
+      "flavorName": "Lemon",
+      "image": "lemon.jpg",
+      "origin": "Italy"
+    },
+    {
+      "id": 18,
+      "flavorName": "Blueberry",
+      "image": "blueberry.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 19,
+      "flavorName": "Salted Caramel",
+      "image": "salted-caramel.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 20,
+      "flavorName": "Cherry",
+      "image": "cherry.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 21,
+      "flavorName": "Hazelnut",
+      "image": "hazelnut.jpg",
+      "origin": "Turkey"
+    },
+    {
+      "id": 22,
+      "flavorName": "Blackberry",
+      "image": "blackberry.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 23,
+      "flavorName": "Red Velvet",
+      "image": "red-velvet.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 24,
+      "flavorName": "Peach",
+      "image": "peach.jpg",
+      "origin": "United States"
+    },
+    {
+      "id": 25,
+      "flavorName": "Ginger",
+      "image": "ginger.jpg",
+      "origin": "China"
+    }
+  ]
+}
