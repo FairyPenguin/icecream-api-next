@@ -12,34 +12,23 @@ import {
 } from '@nestjs/common';
 import { Response } from 'express';
 import { CreateFlavorDto } from 'src/icecream/dtos/CreateFlavor.dto';
-import * as IceCreamFlavoes from '../../../data/flavors.json';
+import { GetAllIcecreamService } from 'src/icecream/services/icecream/get-all-icecreams.service';
 
 @Controller('icecream')
 export class IcecreamController {
-  flavors = IceCreamFlavoes.flavors.map((flavor) => {
-    return {
-      id: flavor.id,
-      name: flavor.flavorName,
-      origin: flavor.origin,
-    };
-  });
+  constructor(private getALlIcecream: GetAllIcecreamService) {}
 
   @Get('list')
   getIceCreamList() {
     // return ['blueberry', 'pomegranate'];
-    return this.flavors;
+    console.log(this.getALlIcecream.FlavorsList(), 'Controller');
+    return this.getALlIcecream.FlavorsList();
   }
 
   //route param
   @Get(':id')
   getFlavorById(@Param('id', ParseIntPipe) id: number) {
-    const filtredById = IceCreamFlavoes.flavors.filter((flavor) => {
-      return flavor.id === id;
-    });
-
-    console.log(typeof id);
-
-    return filtredById;
+    this.getFlavorById(id);
   }
 
   //query param
@@ -50,9 +39,11 @@ export class IcecreamController {
   ) {
     console.log(name);
     console.log(origin);
-    const filtredByOrigin = IceCreamFlavoes.flavors.filter((flavor) => {
-      return flavor.origin === origin;
-    });
+    const filtredByOrigin = this.getALlIcecream
+      .FlavorsList()
+      .filter((flavor) => {
+        return flavor.origin === origin;
+      });
 
     return filtredByOrigin;
   }
